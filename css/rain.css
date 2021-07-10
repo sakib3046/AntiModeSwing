@@ -1,0 +1,57 @@
+.rain{
+    display: flex;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100%;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url('/img/rain.png');
+    animation: rain .3s linear infinite;
+}
+.storm{
+    display: block;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    animation: storm 10s linear infinite;
+}
+@keyframes rain{
+    from{
+        background-position:0% 0% ;
+    }
+    to{
+        background-position: 30% 500%;
+    }
+}
+@keyframes storm{
+    0%{
+        background-color: transparent;
+    }
+    49%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: white;
+    }
+    51%{
+        background-color: transparent;
+    }
+    52%{
+        background-color: white;
+    }
+    53%{
+        background-color: transparent;
+    }
+    90%{
+        background-color: transparent;
+    }
+    91%{
+        background-color: white;
+    }
+    92%{
+        background-color: transparent;
+    }
+}

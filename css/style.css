@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: pink;
+    overflow: hidden;
+}
+html{
+    font-family: 'Galada', cursive;
+    display: auto;
+    overflow: hidden;
+}
+.background{
+    height: 100vh;
+    width: 100%;
+    animation: slide 60s infinite;
+    background-image: url('/img/A.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+@keyframes slide{
+    20%{
+        background-image: url('/img/B.jpeg');
+    }
+    40%{
+        background-image: url('/img/C.jpeg');
+    }
+    60%{
+        background-image: url('/img/D.jpeg');
+    }
+    80%{
+        background-image: url('/img/E.jpeg');
+    }
+    90%{
+        background-image: url('/img/F.jpeg');
+    }
+    
+}
+
+.audio{
+    position: absolute;
+    top:95%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.audio audio{
+    width: 9rem;
+    
+}
+.audio audio:hover{
+    width: 20rem
+}
+.texts{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    height:60px;
+    line-height: 60px;
+    margin-left:5% ;
+    margin-right: 5%;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.5);
+    text-align: center;
+    animation: fade 3s infinite;
+    
+}
+@keyframes fade{
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.texts h3{
+    color: white;
+    font-size:2rem;
+    animation: text-anime 50s infinite ;
+}
+@keyframes text-anime{
+    0%{
+        margin-top: 0;
+    }
+    8%{
+        margin-top: 0;
+    }
+    10%{
+        margin-top: -60px;
+    }
+    18%{
+        margin-top: -60px;
+    }
+    20%{
+        margin-top: -120px;
+    }
+    28%{
+        margin-top: -120px;
+    }
+    30%{
+        margin-top: -180px;
+    }
+    38%{
+        margin-top: -180px;
+    }
+    40%{
+        margin-top: -240px;
+    }
+    48%{
+        margin-top: -240px;
+    }
+    50%{
+        margin-top: -300px;
+    }
+    58%{
+        margin-top: -300px;
+    }
+    60%{
+        margin-top: -360px;
+    }
+    68%{
+        margin-top: -360px;
+    }
+    70%{
+        margin-top: -420px;
+    }
+    78%{
+        margin-top: -420px;
+    }
+    80%{
+        margin-top: -480px;
+    }
+    88%{
+        margin-top: -480px;
+    }
+    90%{
+        margin-top: -540px;
+    }
+    98%{
+        margin-top: -540px;
+    }
+}
